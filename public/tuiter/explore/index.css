@@ -1,0 +1,56 @@
+body {
+  background-color: black;
+  color: white;
+}
+.wd-search{
+  border-radius: 200px;
+  background-color: darkgray;
+  color: white;
+  padding: 12px;
+}
+.wd-border-tuiter {
+  padding-left: -16px;
+  border-left: solid 1px;
+  border-color: rgb(47, 51, 54);
+}
+
+.wd-highlight-tab {
+  font-family: Arial Rounded MT Bold;
+  list-style-type: none;
+  color: rgb(29,161,242);
+  font-size: 15px;
+  padding-left: 16px;
+}
+
+.wd-border-tabs {
+  border-bottom: solid 2px;
+  border-color: rgb(110, 118, 125);
+  padding-left: 16px;
+  display: inline-block;
+}
+.wd-highlight-tab.wd-selected {
+  border-bottom: solid 4px;
+  display: inline-block;
+}
+
+.wd-other-tab {
+  font-family: "Arial Rounded MT Bold";
+  list-style-type: none;
+  color: rgb(110, 118, 125);
+  font-size: 15px;
+  padding-left: 16px;
+  display: inline-block;
+}
+
+.wd-padding-fat {
+  padding: 16px;
+}
+
+.wd-tuits-heading {
+  font-family: "Arial Rounded MT Bold";
+}
+
+.wd-tuits-sub-heading {
+  font-family: "Arial";
+  color: rgb(110, 118, 125);
+}
