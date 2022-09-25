@@ -60,54 +60,57 @@ the gaps.
 <h3>Ordered List Tag</h3>
 How to join the 1%
 <ol>
-  <li>Join Khoury School of computer science at Northeastern University</li>
+  <li>Get a masters in computer science</li>
   <li>Get a $100K+ starting salary job</li>
   <li>Marry a like-minded engineer</li>
   <li>Do great work for a decade</li>
 </ol>
 
 <h3>Unordered List Tag</h3>
-My favorite comedy TV series (in no particular order)
+My favorite books (in no particular order)
 <ul>
-  <li>Friends</li>
-  <li>How I met your mother</li>
-  <li>The office</li>
-  <li>Fresh Prince of Bel Air</li>
-  <li>Simpsons</li>
+  <li>Dune</li>
+  <li>Lord of the Rings</li>
+  <li>Ender's Game</li>
+  <li>Red Mars</li>
+  <li>The Forever War</li>
+  <li>Ikigai</li>
 </ul>
 
 <h2>Table Tag</h2>
-<table style="width:100px; border: 1px solid black">
+<table border="1" width="100%">
+  <thead>
   <tr>
-    <th>Course</th>
-    <th>School</th>
-    <th>Semester</th>
-    <th>Count</th>
+    <th>Quiz</th>
+    <th>Topic</th>
+    <th>Date</th>
+    <th>Grade</th>
   </tr>
+  </thead>
   <tbody>
   <tr>
+    <td>Q1</td>
     <td>HTML</td>
-    <td>Khoury</td>
-    <td>Fall</td>
-    <td>67</td>
+    <td>2/3/21</td>
+    <td>85</td>
   </tr>
   <tr>
-    <td>Thermodynamics</td>
-    <td>Khoury</td>
-    <td>Spring</td>
-    <td>45</td>
+    <td>Q2</td>
+    <td>CSS</td>
+    <td>2/10/21</td>
+    <td>90</td>
   </tr>
   <tr>
-    <td>Product Analysis</td>
-    <td>School of Management</td>
-    <td>Summer</td>
-    <td>59</td>
+    <td>Q3</td>
+    <td>JavaScript</td>
+    <td>2/17/21</td>
+    <td>95</td>
   </tr>
   </tbody>
   <tfoot>
   <tr>
     <td colspan="3">Average</td>
-    <td>57</td>
+    <td>90</td>
   </tr>
   </tfoot>
 </table>
@@ -122,29 +125,23 @@ Loading an image from the internet:<br/>
 
 Loading a local image:<br/>
 
-<img src="maxresdefault.jpg"
+<img src="teslabot.jpg"
      height="225px"/>
 
-<h2>Text Fields Example 1</h2>
-
-<input type="text"
-       placeholder="hint"
-       title="tooltip"
-       value="Rom-Com"/>
-<h2>Text Fields Example 2</h2>
-
+<h2>Text fields</h2>
 <form id="text-fields">
   <label for="text-fields-username">Username:</label>
-  <input id="text-fields-username" placeholder="Enter your username"/><br/>
+  <input id="text-fields-username" placeholder="jdoe"/><br/>
   <label for="text-fields-password">Password:</label>
   <input type="password" id="text-fields-password"
-         value="fake_password"/><br/>
+         value="123@#$asd"/><br/>
   <label for="text-fields-first-name">First name:</label>
   <input type="text" id="text-fields-first-name"
-         title="Tom"/><br/>
+         title="John"/><br/>
   <label for="text-fields-last-name">Last name:</label>
   <input type="text" id="text-fields-last-name"
-         placeholder="Last name" value="Cruise"/>
+         placeholder="Doe" value="Wonderland"/>
+  <!-- copy rest of form elements here -->
 </form>
 
 <h2>Other field types</h2>
@@ -152,20 +149,20 @@ Loading a local image:<br/>
   Email:
 </label>
 <input type="email"
-       placeholder="fakeemail@internet.com"
+       placeholder="jdoe@somewhere.com"
        id="text-fields-email"/><br/>
-<label for="text-fields-mobile-start">
-  Your mobile:
+<label for="text-fields-salary-start">
+  Starting salary:
 </label>
 <input type="number"
-       id="text-fields-mobile-start"
-       placeholder="Use +1 for US number"
-       value="9454936341"/><br/>
+       id="text-fields-salary-start"
+       placeholder="1000"
+       value="100000"/><br/>
 <label for="text-fields-rating">
   Rating:
 </label>
 <input type="range" id="text-fields-rating"
-       placeholder="Your Feedback"
+       placeholder="Doe"
        max="5"
        value="4"/><br/>
 <label for="text-fields-dob">
@@ -173,7 +170,7 @@ Loading a local image:<br/>
 </label>
 <input type="date"
        id="text-fields-dob"
-       value="1968-05-15"/><br/>
+       value="2000-01-21"/><br/>
 <button>Submit</button>
 
 <h2>Text boxes</h2>
@@ -183,34 +180,34 @@ Loading a local image:<br/>
 </form>
 
 <h3>Buttons</h3>
-<button>Will not work!</button>
+<button>Click me!</button>
 
 <h2>Dropdowns</h2>
 
 <h3>Select one</h3>
-<label for="select-your-region">
-  Select your region:
+<label for="select-one-genre">
+  Favorite movie genre:
 </label><br/>
-<select id="select-your-region">
-  <option value="ASIA">Asia</option>
-  <option value="EUROPE">Europe</option>
-  <option selected value="AMERICA">
-    North America
+<select id="select-one-genre">
+  <option value="COMEDY">Comedy</option>
+  <option value="DRAMA">Drama</option>
+  <option selected value="SCIFI">
+    Science Fiction
   </option>
-  <option value="AUSTRALIA">Australia</option>
+  <option value="FANTASY">Fantasy</option>
 </select>
 
 <h3>Select many</h3>
-<label for="select-many-regions">
-  Select many regions:
+<label for="select-many-genre">
+  Favorite movie genres:
 </label><br/>
-<select id="select-many-regions" multiple>
-  <option selected value="ASIA">Asia</option>
-  <option value="EUROPE">Europe</option>
-  <option selected value="AMERICA">
-    NORTH AMERICA
+<select id="select-many-genre" multiple>
+  <option selected value="COMEDY">Comedy</option>
+  <option value="DRAMA">Drama</option>
+  <option selected value="SCIFI">
+    Science Fiction
   </option>
-  <option value="AUSTRALIA">Australia</option>
+  <option value="FANTASY">Fantasy</option>
 </select>
 
 <h2>File upload</h2>
@@ -218,127 +215,107 @@ Loading a local image:<br/>
 
 <h2>Radio buttons</h2>
 
-<label>Select your region:</label><br/>
+<label>Favorite movie genre:</label><br/>
 
-<input type="radio" value="ASIA"
-       name="radio-region" id="radio-asia"/>
-<label for="radio-asia">Asia</label><br/>
-<input type="radio" value="EUROPE"
-       name="radio-region" id="radio-europe"/>
-<label for="radio-europe">Europe</label><br/>
-<input type="radio" value="AMERICA"
-       name="radio-region" id="radio-america" checked/>
-<label for="radio-america">America</label><br/>
-<input type="radio" value="AUSTRALIA"
-       name="radio-region" id="radio-australia"/>
-<label for="radio-australia">Australia</label>
+<input type="radio" value="COMEDY"
+       name="radio-genre" id="radio-comedy"/>
+<label for="radio-comedy">Comedy</label><br/>
+<input type="radio" value="DRAMA"
+       name="radio-genre" id="radio-drama"/>
+<label for="radio-drama">Drama</label><br/>
+<input type="radio" value="SCIFI"
+       name="radio-genre" id="radio-scifi" checked/>
+<label for="radio-scifi">Science Fiction</label><br/>
+<input type="radio" value="FANTASY"
+       name="radio-genre" id="radio-fantasy"/>
+<label for="radio-fantasy">Fantasy</label>
 
 <h2>Checkboxes</h2>
-<label>Select your region:</label>
+<label>Favorite movie genre:</label>
 <br/>
-<input type="checkbox" value="ASIA"
-       name="check-region" id="chkbox-asia" checked/>
-<label for="chkbox-asia">Asia</label> <br/>
-<input type="checkbox" value="EUROPE"
-       name="check-region" id="chkbox-europe"/>
-<label for="chkbox-europe">Europe</label> <br/>
-<input type="checkbox" value="AMERICA"
-       name="check-region" id="chkbox-america" checked/>
-<label for="chkbox-america">America</label> <br/>
-<input type="checkbox" value="AUSTRALIA"
-       name="check-region" id="chkbox-australia"/>
-<label for="chkbox-australia">Australia</label>
+<input type="checkbox" value="COMEDY"
+       name="check-genre" id="chkbox-comedy" checked/>
+<label for="chkbox-comedy">Comedy</label> <br/>
+<input type="checkbox" value="DRAMA"
+       name="check-genre" id="chkbox-drama"/>
+<label for="chkbox-drama">Drama</label> <br/>
+<input type="checkbox" value="SCIFI"
+       name="check-genre" id="chkbox-scifi" checked/>
+<label for="chkbox-scifi">Science Fiction</label> <br/>
+<input type="checkbox" value="FANTASY"
+       name="check-genre" id="chkbox-fantasy"/>
+<label for="chkbox-fantasy">Fantasy</label>
 
 <h2>Anchor tag</h2>
 
 Please
-<a href="https://www.google.com">click here</a>
-to search the internet<br/>
+<a href="https://www.lipsum.com">click here</a>
+to get dummy text<br/>
 
 Checkout my <a href="other-page.html">other page</a>
 
-<section id="embedding-website"</section>
+<h2>Table of Contents</h2>
+<a name="table-of-content"></a>
+<a href="#embedding-websites">Go to Embedding other websites</a><br/>
+<a href="#embedding-youtube">Go to Embedding Youtube</a><br/>
+<a href="#embedding-google-slides">Go to Embedding Google slides</a><br/>
+
+
+<a name="embedding-websites"></a>
 <h2>Embedding other websites</h2>
+<a href="#table-of-content">Top</a><br/>
 <iframe width="600"
         height="400"
-        src="https://searchneu.com/NEU">
+        src="https://en.wikipedia.org/wiki/SpaceX">
 </iframe>
 
-<section id="embedding-youtube"</section>
+<a name="embedding-youtube"></a>
 <h2>Embedding YouTube</h2>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/_rIaGFcOlh8"
-        title="YouTube video player" frameborder="0"
+<a href="#table-of-content">Top</a><br/>
+<iframe width="560"
+        height="315"
+        src="https://www.youtube.com/embed/7CZTLogln34"
+        title="YouTube video player"
+        frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen></iframe>
 
-<section id="embedding-slides"</section>
+<a name="embedding-google-slides"></a>
 <h2>Embedding Google slides</h2>
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQoIYM2gXzRLKt4q5D2-ZahG7zvVcAipkRvj5k9GVLiGDs8NPlLpO3Q08cPUKQbqhL6g8aZp1ZJSwrw/embed?start=false&loop=false&delayms=3000"
-        frameborder="0"
-        width="680"
-        height="418"
-        allowfullscreen="true"
-        mozallowfullscreen="true"
-        webkitallowfullscreen="true">
+<a href="#table-of-content">Top</a><br/>
+<iframe
+    src="https://docs.google.com/presentation/d/e/2PACX-1vQoIYM2gXzRLKt4q5D2-ZahG7zvVcAipkRvj5k9GVLiGDs8NPlLpO3Q08cPUKQbqhL6g8aZp1ZJSwrw/embed?start=false&loop=false&delayms=3000"
+    frameborder="0"
+    width="680"
+    height="418"
+    allowfullscreen="true"
+    mozallowfullscreen="true"
+    webkitallowfullscreen="true">
 </iframe>
-
-<svg width="300"
-     height="100">
-  <rect  width="300"
-         height="100"          style="fill:rgb(90,245,0);
-stroke:rgb(119,11,11);
-stroke-width:10;
-" />
-  <circle cx="50" cy="50"
-          r="40"
-          stroke="red"
-          stroke-width="4"
-          fill="pink" />
-</svg>
-
+<br/>
 <h2>Drawing rectangles</h2>
 
 <svg width="300" height="100">
   <rect width="300" height="100"
-        style="fill:rgb(127,46,213); stroke-width:10;
-   stroke:rgb(239,98,98)" />
+        style="fill:rgb(0,0,255); stroke-width:10;
+    stroke:rgb(0,0,0)"/>
 </svg>
 
 <h2>Drawing circles</h2>
 
 <svg width="100" height="100">
   <circle cx="50" cy="50" r="40"
-          stroke="red" stroke-width="4" fill="orange" />
+          stroke="green" stroke-width="4" fill="yellow"/>
 </svg>
 
 <h2>Drawing polygons</h2>
 
 <svg width="300" height="200">
   <polygon points="100,10 40,198 190,78 10,78 160,198"
-           style="fill:#f5da9c; stroke:#36042f; stroke-width:5; fill-rule:evenodd;" />
+           style="fill:lime; stroke:purple; stroke-width:5; fill-rule:evenodd;"/>
 </svg>
-<br/><hr/>
-<a id="table-of-content"></a>
-<a href="#section-a">Go to section A</a>
-<a href="#section-b">Go to section B</a>
-
-<a id="section-a"></a>
-<h1>Section A</h1></a>
-<a href="#table-of-content">Up</a>
-
-<a id="section-b"></a>
-<h1>Section B</h1></a>
-<a href="#table-of-content">Up</a>
+<br/>
 <hr/>
-
-<h2>Embedding other websites</h2>
-<a href="#embedding-website">Top</a><br/>
-
-<h2>Embedding YouTube</h2>
-<a href="#embedding-youtube">Top</a><br/>
-
-<h2>Embedding Google slides</h2>
-<a href="#embedding-youtube">Top</a><br/>
 
 </body>
 </html>
