@@ -1,0 +1,154 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+.wd-whole-flex-container{
+  display: flex;
+  flex-direction: column;
+  border-top: solid 1px;
+  border-color: rgb(47, 51, 54);
+  border-left: solid 1px;
+  border-color: rgb(47, 51, 54);
+  border-right: solid 1px;
+  border-color: rgb(47, 51, 54);
+  margin: 0 25% 0 25%;
+}
+
+.wd-header-flex-container{
+  display: flex;
+  flex-direction: row;
+  padding-top: 12px;
+  padding-left: 30px;
+}
+
+.wd-search-dimension-landscape {
+  width: 600px;
+  height: 40px;
+  border-radius: 50px;
+  border-color: rgb(19, 17, 17);
+  background-color: rgb(42, 44, 46);
+}
+
+.fa.fa-search {
+  padding-right: 10px;
+}
+
+.fa.fa-gear {
+  width: 36px;
+  height: 36px;
+  padding-top: 5px;
+  padding-left: 20px;
+}
+
+input[type="text"]::placeholder {
+  padding-left: 20px;
+  font-family: Arial Rounded MT Bold;
+}
+
+.wd-navigation-flex-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-left: 16px;
+  border-bottom: solid 2px;
+  border-color: rgb(110, 118, 125);
+}
+
+.wd-search{
+  border-radius: 200px;
+  background-color: darkgray;
+  color: white;
+  padding: 12px;
+}
+
+.wd-padding-fat {
+  padding: 16px;
+}
+
+.wd-highlight-tab {
+  font-family: Arial Rounded MT Bold;
+  color: rgb(29,161,242);
+  font-size: 15px;
+}
+
+.wd-other-tab {
+  font-family: "Arial Rounded MT Bold";
+  color: rgb(110, 118, 125);
+  font-size: 15px;
+  display: inline-block;
+}
+
+.wd-selected {
+  border-bottom: solid 4px;
+  display: inline-block;
+}
+
+.wd-tuits-heading {
+  display: flex;
+  flex-direction: row;
+  font-family: "Arial Rounded MT Bold";
+  font-size: 15px;
+  color: white;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.fa.fa-ellipsis-h {
+  color: rgb(110, 118, 125);
+}
+
+.wd-tuits-sub-heading {
+  font-family: "Arial Rounded MT Bold";
+  font-size: 13px;
+  color: rgb(110, 118, 125);
+}
+
+.wd-tweet-flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.wd-heading-flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 16px;
+}
+
+.wd-rounded-corner {
+  border-radius: 20px;
+}
+
+.wd-border-bottom {
+  border-bottom: solid 1px;
+  border-color: rgb(47, 51, 54);
+}
+
+.wd-tuits-news {
+  display: flex;
+  flex-direction: row;
+}
+
+.wd-tuits-news-sub-heading {
+  font-family: "Arial Rounded MT Bold";
+  font-size: 13px;
+  color: white;
+  padding-left: 10px;
+}
+
+.fa.fa-check-circle {
+  color: white;
+  padding-left: 10px ;
+}
+
+.wd-tuits-news-timestamp {
+  font-family: "Arial";
+  font-size: 13px;
+  color: rgb(110, 118, 125);
+  padding-left: 10px;
+}
+
+.wd-avatar {
+  border-radius: 50%;
+}

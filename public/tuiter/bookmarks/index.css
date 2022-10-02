@@ -1,0 +1,235 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+.wd-whole-flex-container {
+  display: flex;
+  flex-direction: column;
+  border-top: solid 1px;
+  border-color: rgb(47, 51, 54);
+  border-left: solid 1px;
+  border-color: rgb(47, 51, 54);
+  border-right: solid 1px;
+  border-color: rgb(47, 51, 54);
+  margin: 0 27% 0 32%;
+}
+
+.wd-header-flex-container {
+  display: flex;
+  flex-direction: row;
+  border-bottom: solid 1px;
+  border-color: rgb(47, 51, 54);
+}
+
+.wd-header-flex-container.wd-border-bottom.fa.fa-ellipsis-h {
+  color: rgb(29,161,242);
+}
+
+.wd-title-flex-container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.wd-settings {
+  color: rgb(29,161,242);
+  padding-right: 16px;
+}
+
+.wd-heading {
+  padding-top: 12px;
+  font-family:"Arial Rounded MT Bold";
+  font-size: 20px;
+  color: white;
+}
+.wd-handle {
+  padding-top: 3px;
+  padding-bottom: 12px;
+  font-family: "Arial";
+  font-size: 13px;
+  color: rgb(110, 118, 125);
+}
+
+.wd-avatar {
+  border-radius: 50%;
+}
+
+
+.wd-rich-tweet-flex-container {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 12px;
+  border-bottom: solid 1px;
+  border-color: rgb(47, 51, 54);
+}
+
+.wd-avatar-flex-container {
+  padding-left: 16px;
+  padding-top: 12px;
+  border-radius: 50%;
+}
+
+.wd-tweet-flex-container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 12px;
+  padding-top: 12px;
+}
+
+.wd-tweet-head-flex-box {
+  display: flex;
+  flex-direction: row;
+  font-family: "Arial Rounded MT Bold";
+  font-size: 15px;
+}
+
+.wd-tweet-handle-flex-box {
+  font-family: Arial;
+  font-size: 15px;
+  color: rgb(110, 118, 125);
+  padding-left: 4px;
+}
+
+.fa.fa-ellipsis-h {
+  padding-left: 220px;
+  color: rgb(110, 118, 125);
+}
+
+.wd-paragraph-flex-container {
+  font-family: Arial;
+  font-size: 15px;
+  color: white;
+  padding-right: 16px;
+  max-width: 504px
+}
+
+.wd-rich-media-container {
+  margin-bottom: 12px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border: solid 1px rgb(47, 51, 54);
+  max-width: 504px
+}
+
+.wd-image-1 {
+  padding-top: 12px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  max-width: 504px
+
+}
+
+.wd-rich-text-rounded-container {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 12px;
+}
+
+.wd-border-size {
+  width: 504px;
+}
+
+.wd-rich-text-head-flex-box {
+  font-family: Arial ;
+  font-size: 15px;
+  color: white;
+  padding-right: 12px;
+  padding-left: 12px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.wd-rich-text-content-flex-box {
+  display: flex;
+  justify-content: center;
+  font-family: Arial ;
+  font-size: 15px;
+  color: rgb(110, 118, 125);
+  padding-right: 12px;
+  padding-left: 12px;
+  padding-bottom: 12px;
+}
+
+.wd-rich-text-link-flex-box {
+  display: flex;
+  flex-direction: row;
+  font-family: Arial ;
+  font-size: 15px;
+  color: rgb(110, 118, 125);
+  padding-right: 12px;
+  padding-left: 12px;
+  padding-bottom: 12px;
+}
+
+.wd-link {
+  padding-left: 10px;
+}
+
+.wd-tweet-response-flex-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.wd-message-reaction {
+  display: flex;
+  flex-direction: row;
+}
+
+.fa.fa-comment-o {
+  color: rgb(110, 118, 125);
+}
+
+.wd-message-count {
+  font-family: "Arial";
+  padding-left: 5px;
+  color: rgb(110, 118, 125);
+}
+
+.wd-retweet-reaction {
+  display: flex;
+  flex-direction: row;
+}
+
+.fa.fa-retweet {
+  color: rgb(110, 118, 125);
+}
+
+.wd-retweet-count {
+  font-family: "Arial";
+  padding-left: 5px;
+  color: rgb(110, 118, 125);
+}
+
+.wd-love-reaction {
+  display: flex;
+  flex-direction: row;
+}
+
+.fa.fa-heart {
+  color: deeppink;
+}
+
+.wd-love-count {
+  font-family: "Arial";
+  padding-left: 5px;
+  color: deeppink;
+}
+
+.wd-share-reaction {
+  display: flex;
+  flex-direction: row;
+}
+
+.fa.fa-share-square-o {
+  color: rgb(110, 118, 125);
+}
+
+.wd-share-count {
+  font-family: "Arial";
+  padding-left: 5px;
+  color: rgb(110, 118, 125);
+}
