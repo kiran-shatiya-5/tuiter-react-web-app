@@ -177,6 +177,7 @@ body {
 .wd-message-reaction {
   display: flex;
   flex-direction: row;
+  text-decoration: none;
 }
 
 .fa.fa-comment-o {
@@ -185,13 +186,14 @@ body {
 
 .wd-message-count {
   font-family: "Arial";
-  padding-left: 5px;
+  padding-left: 12px;
   color: rgb(110, 118, 125);
 }
 
 .wd-retweet-reaction {
   display: flex;
   flex-direction: row;
+  text-decoration: none;
 }
 
 .fa.fa-retweet {
@@ -200,13 +202,14 @@ body {
 
 .wd-retweet-count {
   font-family: "Arial";
-  padding-left: 5px;
+  padding-left: 12px;
   color: rgb(110, 118, 125);
 }
 
 .wd-love-reaction {
   display: flex;
   flex-direction: row;
+  text-decoration: none;
 }
 
 .fa.fa-heart {
@@ -215,13 +218,14 @@ body {
 
 .wd-love-count {
   font-family: "Arial";
-  padding-left: 5px;
+  padding-left: 12px;
   color: deeppink;
 }
 
 .wd-share-reaction {
   display: flex;
   flex-direction: row;
+  text-decoration: none;
 }
 
 .fa.fa-share-square-o {
@@ -230,6 +234,6 @@ body {
 
 .wd-share-count {
   font-family: "Arial";
-  padding-left: 5px;
+  padding-left: 12px;
   color: rgb(110, 118, 125);
 }
