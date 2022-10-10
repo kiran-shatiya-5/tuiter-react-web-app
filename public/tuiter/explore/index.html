@@ -3,93 +3,285 @@
 <head>
   <meta charset="UTF-8">
   <title>Title</title>
+  <link href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
   <link rel="stylesheet" href="index.css"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/a967a4cc16.js" crossorigin="anonymous"></script>
 </head>
-<body>
-<div class = "wd-whole-flex-container">
+<body class="bg-black">
 
-  <div class = "wd-header-flex-container">
-    <div class = "wd-search-container">
-      <i class = "fa fa-search"></i>
-      <input class = "wd-search-dimension-landscape" placeholder="Search Tuiter" type="text"/>
+<div class="container text-white bg-black">
+  <div class="row">
+
+    <div class = 'col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2'>
+      <div class="list-group mt-2 wd-padding-right-nav">
+        <a href="#" class="list-group-item list-group-item-action bg-black text-white mb-1"><i class="fa-solid fa-t p-3"></i></a>
+        <a href="#" class="list-group-item list-group-item-action bg-black text-white-50 mb-1"><i class="fa-solid fa-house p-3"></i><h6 class="d-none d-sm-none d-md-none d-lg-none d-xl-inline d-xxl-inline"> Home</h6></a>
+        <a href="#" class="list-group-item list-group-item-action bg-black text-white mb-1"><i class="fa-sharp fa-solid fa-hashtag p-3 active"></i><h6 class="d-none d-sm-none d-md-none d-lg-none d-xl-inline d-xxl-inline"><b> Explore</b></h6></a>
+        <a href="#" class="list-group-item list-group-item-action bg-black text-white-50 mb-1"><i class="fa-regular fa-bell p-3"></i><h6 class="d-none d-sm-none d-md-none d-lg-none d-xl-inline d-xxl-inline">Notifications</h6></a>
+        <a href="#" class="list-group-item list-group-item-actio bg-black text-white-50 mb-1"><i class="fa-regular fa-envelope p-3"></i><h6 class="d-none d-sm-none d-md-none d-lg-none d-xl-inline d-xxl-inline"> Messages</h6></a>
+        <a href="#" class="list-group-item list-group-item-action bg-black text-white-50 mb-1"><i class="fa-regular fa-bookmark p-3"></i><h6 class="d-none d-sm-none d-md-none d-lg-none d-xl-inline d-xxl-inline"> Bookmarks</h6></a>
+        <a href="#" class="list-group-item list-group-item-action bg-black text-white-50 mb-1"><i class="fa-regular fa-rectangle-list p-3"></i></i><h6 class="d-none d-sm-none d-md-none d-lg-none d-xl-inline d-xxl-inline"> Lists</h6></a>
+        <a href="#" class="list-group-item list-group-item-action bg-black text-white-50 mb-1"><i class="fa-regular fa-user p-3"></i></i><h6 class="d-none d-sm-none d-md-none d-lg-none d-xl-inline d-xxl-inline"> Profile</h6></a>
+        <a href="#" class="list-group-item list-group-item-action bg-black text-white-50 mb-1"><i class="fa-solid fa-ellipsis p-3"></i></i><h6 class="d-none d-sm-none d-md-none d-lg-none d-xl-inline d-xxl-inline"> More</h6></a>
+      </div>
+      <button type="submit" class="btn btn-primary text-white p-2 rounded-pill w-100 mt-3"><b>Tuit</b></button>
+
     </div>
-      <a href="explore-settings.html">
-        <i class="fa fa-gear" style="font-size:36px; color: rgb(29,161,242);"></i>
-      </a>
+
+    <div class="col-9 col-sm-10 col-md-10 col-lg-6 col-xl-6 col-xxl-6 wd-border-side">
+
+      <div class = "d-flex p-3">
+        <div class ="position-relative col-11">
+          <input class = "ps-5 form-control rounded-pill mt-2 bg-dark text-white border-0" placeholder="Search Tuiter" style="width: 100%"/>
+          <i class="position-absolute fa-solid fa-magnifying-glass wd-search-tuiter text-white"></i>
+        </div>
+        <div class = "col-1">
+          <i class="fa-solid fa-gear fa-2x pt-1 p-3 mt-2 text-white-50" style="height: 100%; color: dodgerblue"></i>
+        </div>
+      </div>
+
+      <a href="https://getbootstrap.com/docs/5.1/components/navs-tabs/"></a>
+      <ul class="nav wd-navigation-flex-container w-100">
+        <li class="nav-item">
+          <a class="nav-link active text-white wd-highlight-tab wd-selected" aria-current="page" href="#"><b>For you</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-secondary" href="#"><b>Trending</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-secondary" href="#"><b>COVID-19</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-secondary d-none d-sm-block d-md-block d-lg-block d-xl-block d-xxl-block" href="#"><b>News</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-secondary d-none d-sm-none d-md-block d-lg-block d-xl-block d-xxl-block" href="#"><b>Sports</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-secondary d-none d-sm-none d-md-none d-lg-block d-xl-block d-xxl-block" href="#"><b>Entertainment</b></a>
+        </li>
+      </ul>
+
+      <div class="position-relative">
+        <img src="../../labs/a4/tuiter/images/starship.jpg" style="width:100%;"/>
+        <div class="position-absolute wd-placement text-white p-2">Space . Last Night</div>
+        <h1 class="position-absolute bottom-0 left-0 text-white p-2"> SpaceX's Starship</h1>
+      </div>
+
+      <div class = "wd-padding-fat wd-tweet-flex-container wd-border-bottom">
+        <div class = "wd-tuits-sub-heading">Trending in science</div>
+        <div class ="wd-heading-flex-container">
+          <div class = "wd-tuits-heading">Starship</div>
+          <i class = "fa fa-ellipsis-h"></i>
+        </div>
+        <div class = "wd-tuits-sub-heading">55.5K Tuits</div>
+      </div>
+
+      <div class = "wd-padding-fat wd-tweet-flex-container wd-border-bottom">
+        <div class = "wd-tuits-sub-heading">COVID-19 . LIVE</div>
+        <div class = "wd-heading-flex-container">
+          <div class = "wd-tuits-heading">COVID-19: News and updates for Massachusetts</div>
+          <img class = "wd-rounded-corner wd-padding-right" src = "boston.jpg" style="width: 100px; height: 100px">
+        </div>
+      </div>
+
+      <div class = "wd-padding-fat wd-tweet-flex-container wd-border-bottom">
+        <div class = "wd-tuits-sub-heading">Sports . Trending</div>
+        <div class ="wd-heading-flex-container">
+          <div class = "wd-tuits-heading">Joe Rogan</div>
+          <i class = "fa fa-ellipsis-h"></i>
+        </div>
+        <div class = "wd-tuits-sub-heading">5,218 Tuits</div>
+      </div>
+
+      <div class = "wd-padding-fat wd-tweet-flex-container wd-border-bottom">
+        <div class ="wd-tuits-news">
+          <img class = "wd-avatar" src = "bloomberg.jpg" alt="Avatar" style="width:15px; height:15px;"/>
+          <div class= "wd-tuits-news-sub-heading"> Bloomberg opinion </div>
+          <i class="fa fa-check-circle"></i>
+          <div class = "wd-tuits-news-timestamp">. Yesterday</div>
+        </div>
+        <div class = "wd-heading-flex-container">
+          <div class = "wd-tuits-heading">Nature's Extinction Theory: Toucans are now considered gone</div>
+          <img class = "wd-rounded-corner wd-padding-right" src = "nature.jpeg" style="width: 100px; height: 100px">
+        </div>
+      </div>
+
+      <div class = "wd-padding-fat wd-tweet-flex-container wd-border-bottom">
+        <div class = "wd-tuits-sub-heading">TRENDING IN USA . LIVE</div>
+        <div class = "wd-heading-flex-container">
+          <div class = "wd-tuits-heading">What is your thought on the latest outing of Tom Cruise?</div>
+          <img class = "wd-rounded-corner wd-padding-right" src = "topgun.jpg" style="width: 100px; height: 100px">
+        </div>
+      </div>
+
+      <div class = "wd-padding-fat wd-tweet-flex-container">
+        <div class ="wd-tuits-news">
+          <img class = "wd-avatar" src = "nytimes.jpg" alt="Avatar" style="width:15px; height:15px;"/>
+          <div class= "wd-tuits-news-sub-heading"> NYTimes </div>
+          <i class="fa fa-check-circle"></i>
+          <div class = "wd-tuits-news-timestamp">. 21h</div>
+        </div>
+        <div class = "wd-heading-flex-container">
+          <div class = "wd-tuits-heading">Apple has decided to name it's latest software from the famous mountains</div>
+          <img class = "wd-rounded-corner wd-padding-right" src = "image.jpg" style="width: 100px; height: 100px">
+        </div>
+      </div>
+
+    </div>
+
+    <div class="col-0 col-sm-0 col-md-0 col-lg-4 col-xl-4 col-xxl-4 d-none d-sm-none d-md-none d-lg-block d-xl-block d-xxl-block">
+      <a href="https://getbootstrap.com/docs/5.1/components/list-group/#links-and-buttons"></a>
+      <ul class="list-group mt-4">
+
+        <li class="list-group-item bg-dark">
+          <div class="row d-flex">
+            <div class = "col-5">
+              <div class = "d-flex">
+                <div class="text-white"><b>Who to Follow</b></div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="list-group-item bg-dark">
+          <div class="row d-flex">
+            <div class = "col-3">
+              <img class="rounded-circle p-1" src="../../labs/a4/tuiter/images/java.png" style="width: 100%; height:100%">
+            </div>
+            <div class = "col-5">
+              <div class = "d-flex">
+                <div class="text-white"><b>Java</b></div>
+                <i class="fa-solid fa-check text-white p-1"></i>
+              </div>
+              <div class="text-white">@Java</div>
+            </div>
+            <div class = "col-4">
+              <button type="submit" class="btn btn-primary text-white rounded-pill float-end">
+                Follow
+              </button>
+            </div>
+          </div>
+        </li>
+
+        <li class="list-group-item bg-dark">
+          <div class="row d-flex">
+            <div class = "col-3">
+              <img class="rounded-circle p-1" src="../../labs/a4/tuiter/images/relativity_black.jpeg" style="width: 100%; height:100%">
+            </div>
+            <div class = "col-5">
+              <div class = "d-flex">
+                <div class="text-white"><b>Relativity Space</b></div>
+                <i class="fa-solid fa-check text-white p-1"></i>
+              </div>
+              <div class="text-white">@relativityspace</div>
+            </div>
+            <div class = "col-4">
+              <button type="submit" class="btn btn-primary text-white rounded-pill float-end">
+                Follow
+              </button>
+            </div>
+          </div>
+        </li>
+
+        <li class="list-group-item bg-dark">
+          <div class="row d-flex">
+            <div class = "col-3">
+              <img class="rounded-circle p-1" src="../../labs/a4/tuiter/images/virgin.svg" style="width: 100%; height:100%">
+            </div>
+            <div class = "col-5">
+              <div class = "d-flex">
+                <div class="text-white"><b>Virgin Galactica</b></div>
+                <i class="fa-solid fa-check text-white p-1"></i>
+              </div>
+              <div class="text-white">@virgingalactic</div>
+            </div>
+            <div class = "col-4">
+              <button type="submit" class="btn btn-primary text-white rounded-pill float-end">
+                Follow
+              </button>
+            </div>
+          </div>
+        </li>
+
+        <li class="list-group-item bg-dark">
+          <div class="row d-flex">
+            <div class = "col-3">
+              <img class="rounded-circle p-1" src="../../labs/a4/tuiter/images/nasa.jpg" style="width: 100%; height:100%">
+            </div>
+            <div class = "col-5">
+              <div class = "d-flex">
+                <div class="text-white"><b>NASA</b></div>
+                <i class="fa-solid fa-check text-white p-1"></i>
+              </div>
+              <div class="text-white">@NASA</div>
+            </div>
+            <div class = "col-4">
+              <button type="submit" class="btn btn-primary text-white rounded-pill float-end">
+                Follow
+              </button>
+            </div>
+          </div>
+        </li>
+
+        <li class="list-group-item bg-dark">
+          <div class="row d-flex">
+            <div class = "col-3">
+              <img class="rounded-circle p-1" src="../../labs/a4/tuiter/images/tesla.jpg" style="width: 100%; height:100%">
+            </div>
+            <div class = "col-5">
+              <div class = "d-flex">
+                <div class="text-white"><b>Tesla</b></div>
+                <i class="fa-solid fa-check text-white p-1"></i>
+              </div>
+              <div class="text-white">@Tesla</div>
+            </div>
+            <div class = "col-4">
+              <button type="submit" class="btn btn-primary text-white rounded-pill float-end">
+                Follow
+              </button>
+            </div>
+          </div>
+        </li>
+
+        <li class="list-group-item bg-dark">
+          <div class="row d-flex">
+            <div class = "col-5">
+              <div class = "d-flex">
+                <a href="#" style="color: dodgerblue; text-decoration: none">Show more</a>
+              </div>
+            </div>
+          </div>
+        </li>
+
+      </ul>
+
+      <ul class="nav w-100 mb-0">
+        <li class="nav-item">
+          <a class="nav-link text-secondary wd-font-size" aria-current="page" href="#">Terms of Service</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-secondary wd-font-size" href="#">Privacy Policy</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-secondary wd-font-size" href="#">Cookie Policy</a>
+        </li>
+      </ul>
+
+      <ul class="nav w-100 mt-0">
+        <li class="nav-item">
+          <a class="nav-link text-secondary wd-font-size" aria-current="page" href="#">Ads info</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-secondary wd-font-size" href="#">More…</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-secondary wd-font-size" href="#">© 2021 Tuiter, Inc.</a>
+        </li>
+      </ul>
+
+    </div>
   </div>
-
-  <ul class = "wd-navigation-flex-container">
-    <li class = "wd-highlight-tab wd-padding-fat wd-selected">For you</li>
-    <li class = "wd-other-tab wd-padding-fat">Trending</li>
-    <li class = "wd-other-tab wd-padding-fat">COVID-19</li>
-    <li class = "wd-other-tab wd-padding-fat">News</li>
-    <li class = "wd-other-tab wd-padding-fat">Sports</li>
-    <li class = "wd-other-tab wd-padding-fat">Entertainment</li>
-  </ul>
-
-  <div class = "wd-padding-fat wd-tweet-flex-container wd-border-bottom">
-    <div class = "wd-tuits-sub-heading">Trending in science</div>
-    <div class ="wd-heading-flex-container">
-      <div class = "wd-tuits-heading">Starship</div>
-      <i class = "fa fa-ellipsis-h"></i>
-    </div>
-    <div class = "wd-tuits-sub-heading">55.5K Tuits</div>
-
-
-  </div>
-
-  <div class = "wd-padding-fat wd-tweet-flex-container wd-border-bottom">
-    <div class = "wd-tuits-sub-heading">COVID-19 . LIVE</div>
-    <div class = "wd-heading-flex-container">
-      <div class = "wd-tuits-heading">COVID-19: News and updates for Massachusetts</div>
-      <img class = "wd-rounded-corner wd-padding-right" src = "boston.jpg" style="width: 100px; height: 100px">
-    </div>
-  </div>
-
-  <div class = "wd-padding-fat wd-tweet-flex-container wd-border-bottom">
-    <div class = "wd-tuits-sub-heading">Sports . Trending</div>
-    <div class ="wd-heading-flex-container">
-      <div class = "wd-tuits-heading">Joe Rogan</div>
-      <i class = "fa fa-ellipsis-h"></i>
-    </div>
-    <div class = "wd-tuits-sub-heading">5,218 Tuits</div>
-  </div>
-
-  <div class = "wd-padding-fat wd-tweet-flex-container wd-border-bottom">
-    <div class ="wd-tuits-news">
-      <img class = "wd-avatar" src = "bloomberg.jpg" alt="Avatar" style="width:15px; height:15px;"/>
-      <div class= "wd-tuits-news-sub-heading"> Bloomberg opinion </div>
-      <i class="fa fa-check-circle"></i>
-      <div class = "wd-tuits-news-timestamp">. Yesterday</div>
-    </div>
-    <div class = "wd-heading-flex-container">
-      <div class = "wd-tuits-heading">Nature's Extinction Theory: Toucans are now considered gone</div>
-      <img class = "wd-rounded-corner wd-padding-right" src = "nature.jpeg" style="width: 100px; height: 100px">
-    </div>
-  </div>
-
-  <div class = "wd-padding-fat wd-tweet-flex-container wd-border-bottom">
-    <div class = "wd-tuits-sub-heading">TRENDING IN USA . LIVE</div>
-    <div class = "wd-heading-flex-container">
-      <div class = "wd-tuits-heading">What is your thought on the latest outing of Tom Cruise?</div>
-      <img class = "wd-rounded-corner wd-padding-right" src = "topgun.jpg" style="width: 100px; height: 100px">
-    </div>
-  </div>
-
-  <div class = "wd-padding-fat wd-tweet-flex-container wd-border-bottom">
-    <div class ="wd-tuits-news">
-      <img class = "wd-avatar" src = "nytimes.jpg" alt="Avatar" style="width:15px; height:15px;"/>
-      <div class= "wd-tuits-news-sub-heading"> NYTimes </div>
-      <i class="fa fa-check-circle"></i>
-      <div class = "wd-tuits-news-timestamp">. 21h</div>
-    </div>
-    <div class = "wd-heading-flex-container">
-      <div class = "wd-tuits-heading">Apple has decided to name it's latest software from the famous mountains</div>
-      <img class = "wd-rounded-corner wd-padding-right" src = "image.jpg" style="width: 100px; height: 100px">
-    </div>
-  </div>
-
 </div>
 </body>
 </html>
