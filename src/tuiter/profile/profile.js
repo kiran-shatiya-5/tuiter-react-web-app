@@ -1,5 +1,8 @@
 import React, {useState} from "react";
 import {Link} from "react-router-dom";
+import currentUserReducer from "./current-user"
+import {createStore} from "redux";
+import {Provider} from "react-redux";
 
 const Profile = ({profile}) => {
   return(

@@ -11,14 +11,15 @@ import {
 
 const EditProfile = () => {
   const profile = useSelector(state => state.profile)
-  let [Name,setName] = useState(profile.name);
-  let [Bio,setBio] = useState(profile.bio);
-  let [Location,setLocation] = useState(profile.location);
-  let [Website,setWebsite] = useState(profile.website);
-  let [Date,setDate] = useState(profile.dateofBirth);
+  const [Name,setName] = useState(profile.name);
+  const [Bio,setBio] = useState(profile.bio);
+  const [Location,setLocation] = useState(profile.location);
+  const [Website,setWebsite] = useState(profile.website);
+  const [Date,setDate] = useState(profile.dateofBirth);
 
   const dispatch = useDispatch();
   const setNameChange = (event) => {
+    console.log('changing name')
     setName(event.target.value);
     dispatch(changeProfileName);
   }
