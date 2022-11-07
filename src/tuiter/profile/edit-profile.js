@@ -21,27 +21,27 @@ const EditProfile = () => {
   const setNameChange = (event) => {
     console.log('changing name')
     setName(event.target.value);
-    dispatch(changeProfileName);
+    dispatch(changeProfileName(Name));
   }
 
   const setBioChange = (event) => {
     setBio(event.target.value);
-    dispatch(changeBio);
+    dispatch(changeBio(Bio));
   }
 
   const setLocationChange = (event) => {
     setLocation(event.target.value);
-    dispatch(changeLocation);
+    dispatch(changeLocation(Location));
   }
 
   const setWebsiteChange = (event) => {
     setWebsite(event.target.value);
-    dispatch(changeWebsite);
+    dispatch(changeWebsite(Website));
   }
 
   const setDateChange = (event) => {
     setDate(event.target.value);
-    dispatch(changeDate);
+    dispatch(changeDate(Date));
   }
 
   return(
@@ -78,6 +78,7 @@ const EditProfile = () => {
           </div>
           <div className="wd-padding-left">
             <textarea id="name" name="name" rows="1" cols="45" value = {Name}
+                      className ="form-control"
                       onChange={setNameChange}></textarea>
           </div>
 
@@ -85,28 +86,32 @@ const EditProfile = () => {
             <label className="text-secondary" htmlFor="bio">Bio:</label>
           </div>
           <div className="wd-padding-left">
-            <textarea id="bio" name="bio" rows="4" cols="45" value = {Bio} onChange={setBioChange}></textarea>
+            <textarea id="bio" name="bio" rows="4" cols="45" value = {Bio}
+                      className ="form-control" onChange={setBioChange}></textarea>
           </div>
 
           <div className="mt-2 wd-padding-left">
             <label className="text-secondary" htmlFor="location">Location:</label>
           </div>
           <div className="wd-padding-left">
-            <textarea id="location" name="location" rows="1" cols="45" value={Location} onChange={setLocationChange}></textarea>
+            <textarea id="location" name="location" rows="1" cols="45" value={Location}
+                      className ="form-control" onChange={setLocationChange}></textarea>
           </div>
 
           <div className="mt-2 wd-padding-left">
             <label className="text-secondary" htmlFor="site">Website</label>
           </div>
           <div className="wd-padding-left">
-            <textarea id="site" name="site" rows="1" cols="45" value = {Website} onChange={setWebsiteChange}></textarea>
+            <textarea id="site" name="site" rows="1" cols="45" value = {Website}
+                      className ="form-control" onChange={setWebsiteChange}></textarea>
           </div>
 
           <div className="mt-2 wd-padding-left">
             <label className="text-secondary" htmlFor="dob">BirthDate</label>
           </div>
           <div className="wd-padding-left">
-            <textarea id="dob" name="dob" rows="1" cols="45" value ={Date} onChange={setDateChange}></textarea>
+            <textarea id="dob" name="dob" rows="1" cols="45" value ={Date}
+                      className ="form-control" onChange={setDateChange}></textarea>
           </div>
 
           <div className="row mt-3 wd-padding-left">

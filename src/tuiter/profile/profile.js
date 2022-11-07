@@ -1,10 +1,9 @@
 import React, {useState} from "react";
 import {Link} from "react-router-dom";
-import currentUserReducer from "./current-user"
-import {createStore} from "redux";
-import {Provider} from "react-redux";
+import { useSelector} from "react-redux";
 
-const Profile = ({profile}) => {
+const Profile = () => {
+  const profile = useSelector(state => state.profile)
   return(
       <>
         <div className="wd-whole-flex-container">
