@@ -1,3 +1,38 @@
+.wd-padding-left {
+  padding-left: 20px;
+}
+
+.wd-profile-padding-left {
+  padding-left: 40px;
+}
+
+.wd-profile-response-flex-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.wd-padding-top {
+  padding-top: 20px;
+}
+
+.wd-image-pos {
+  padding-left: 30px;
+  width: 600px;
+  height: 250px;
+}
+
+.wd-image-height {
+  height: 250px;
+}
+
+.wd-nudge-up {
+  bottom: -30px;
+  left: 55px;
+}
+
+.wd-button {
+  margin-left:450px;
+}
 
 
 .wd-whole-flex-container {
@@ -9,6 +44,9 @@
   border-color: lightgrey;
   border-right: solid 1px;
   border-color: lightgrey;
+  border-bottom: solid 1px;
+  border-color: lightgrey;
+  padding-bottom: 15px;
 }
 
 .wd-header-flex-container {
@@ -38,7 +76,7 @@
   padding-top: 12px;
   font-family:"Arial Rounded MT Bold";
   font-size: 20px;
-  color: white;
+  color: black;
 }
 .wd-handle {
   padding-top: 3px;
@@ -57,10 +95,6 @@
   flex-direction: row;
   padding-bottom: 12px;
   border-bottom: solid 1px;
-  border-color: lightgrey;
-  border-left: solid 1px;
-  border-color: lightgrey;
-  border-right: solid 1px;
   border-color: lightgrey;
 }
 

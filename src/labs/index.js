@@ -1,7 +1,8 @@
-import Assignment6 from "./a6";
 import Nav from "../nav";
 import TodoItem from "./a6/todo/todo-item";
 import TodoList from "./a6/todo/todo-list";
+import Assignment6 from "./a6";
+
 
 function Labs() {
   return (

@@ -1,9 +1,9 @@
 import React from "react";
-import tuitArray from "./tuits.json"
 import PostItem from "./post-item";
+import {useSelector} from "react-redux";
 
-const PostList = () => {
-
+const TuitsList = () => {
+  const tuitArray = useSelector(state => state.tuits)
   return(
       <div>
         {
@@ -15,4 +15,4 @@ const PostList = () => {
       </div>
    );
 };
-export default PostList;
+export default TuitsList;
