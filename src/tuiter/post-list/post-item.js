@@ -1,12 +1,12 @@
 import React from "react";
 import {useDispatch} from "react-redux";
-import {deleteTuit} from "../post-list/tuits-reducer";
+import {updateTuitThunk, deleteTuitThunk} from "../../services/tuits-thunks";;
 
 const TuitsItem = ({tuits}) => {
 
   const dispatch = useDispatch();
   const deleteTuitHandler = (id) => {
-    dispatch(deleteTuit(id));
+    dispatch(deleteTuitThunk(id));
   }
   return(
       <div>
@@ -19,7 +19,7 @@ const TuitsItem = ({tuits}) => {
           </div>
 
           <div className="wd-tweet-flex-container w-100">
-            <div className="wd-tweet-head-flex-box">{tuits.userName}
+            <div className="wd-tweet-head-flex-box">{tuits.username}
               <i className="fa fa-check"></i>
               <div className="wd-tweet-handle-flex-box">{tuits.handle} .  {tuits.time}
                 <i className="bi bi-x-lg float-end"
@@ -41,7 +41,10 @@ const TuitsItem = ({tuits}) => {
                 <div className="wd-retweet-count">{tuits.retuits}</div>
               </a>
               <a className="wd-love-reaction w-100" href="#">
-                <i className="bi bi-heart text-secondary"></i>
+                <i onClick={() => dispatch(updateTuitThunk({
+                  ...tuits,
+                  likes: tuits.likes + 1
+                }))} className="bi bi-heart-fill me-2 text-danger"></i>
                 <div className="wd-love-count text-secondary">{tuits.likes}</div>
               </a>
               <a className="wd-share-reaction w-100" href="#">

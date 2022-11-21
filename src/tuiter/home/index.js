@@ -1,6 +1,6 @@
 import React from "react";
 import "./index.css"
-import PostList from "../post-list/index.js";
+import TuitsList from "../post-list/index.js";
 import WhatsHappening from "./whats-happening";
 
 const HomeComponent = () => {
@@ -8,7 +8,7 @@ const HomeComponent = () => {
       <div>
         <div>
           <WhatsHappening/>
-          <PostList/>
+          <TuitsList/>
         </div>
       </div>
    );
