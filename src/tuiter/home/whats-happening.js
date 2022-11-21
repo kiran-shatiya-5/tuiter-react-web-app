@@ -8,7 +8,19 @@ const WhatsHappening = () => {
   const dispatch = useDispatch();
   const tuitClickHandler = () => {
     const newTuit = {
-      tuit: whatsHappening
+      tuit: whatsHappening,
+      _id: 456,
+      topic: "Friends",
+      username: "Chandler Bing",
+      handle: "@chandler",
+      time: "Just now",
+      image: "../../images/chandler.jpg",
+      title: "Chandler's confession",
+      liked: true,
+      likes: 548,
+      replies: 68,
+      retuits: 432
+
     }
     dispatch(createTuitThunk(newTuit));
     console.log(whatsHappening);

@@ -14,7 +14,7 @@ const TuitsItem = ({tuits}) => {
         <div className="wd-rich-tweet-flex-container">
 
           <div className="wd-avatar-flex-container">
-            <img className="wd-avatar" src = {`../images/${tuits.image}`} alt="Avatar"
+            <img className="wd-avatar" src = {`../../images/${tuits.image}`} alt="Avatar"
                  style={{width: "48px", height: "48px"}}/>
           </div>
 
