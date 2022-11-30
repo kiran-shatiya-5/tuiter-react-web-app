@@ -9,7 +9,6 @@ const WhatsHappening = () => {
   const tuitClickHandler = () => {
     const newTuit = {
       tuit: whatsHappening,
-      _id: 456,
       topic: "Friends",
       username: "Chandler Bing",
       handle: "@chandler",
