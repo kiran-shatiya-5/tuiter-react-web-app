@@ -47,6 +47,13 @@ const TuitsItem = ({tuits}) => {
                 }))} className="bi bi-heart-fill me-2 text-danger"></i>
                 <div className="wd-love-count text-secondary">{tuits.likes}</div>
               </a>
+              <a className="wd-love-reaction w-100" href="#">
+                <i onClick={() => dispatch(updateTuitThunk({
+                  ...tuits,
+                  dislikes: tuits.dislikes + 1
+                }))} className="bi bi-hand-thumbs-down text-secondary"></i>
+                <div className="wd-love-count text-secondary">{tuits.dislikes}</div>
+              </a>
               <a className="wd-share-reaction w-100" href="#">
                 <i className="bi bi-box-arrow-up text-secondary"></i>
                 <div className="wd-share-count"></div>

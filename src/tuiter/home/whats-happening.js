@@ -17,6 +17,7 @@ const WhatsHappening = () => {
       title: "Chandler's confession",
       liked: true,
       likes: 548,
+      dislikes: 20,
       replies: 68,
       retuits: 432
 

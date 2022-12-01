@@ -22,6 +22,7 @@ const templateTuit = {
   "replies": 0,
   "retuits": 0,
   "likes": 0,
+  "dislikes": 0,
 }
 
 
